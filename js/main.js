@@ -138,14 +138,14 @@ window.addEventListener('load', updateActiveNav);
    CERTIFICATION PHOTO UPLOAD, STORAGE & MODAL LIGHTBOX
    ======================================================== */
 const certDetails = {
-    'ccna': { title: 'CCNA (Cisco Certified)', issuer: 'Cisco Systems', defaultPath: 'certs/ccna.jpg' },
-    'ccnp-encor': { title: 'CCNP ENCOR', issuer: 'Cisco Enterprise Core (Studying)', defaultPath: 'certs/ccnp-encor.jpg' },
-    'ccnp-enarsi': { title: 'CCNP ENARSI', issuer: 'Cisco Enterprise Advanced Routing and Services (Studying)', defaultPath: 'certs/ccnp-enarsi.jpg' },
-    'fortinet-nse3': { title: 'Fortinet NSE 3', issuer: 'Fortinet Network Security Expert', defaultPath: 'certs/fortinet-nse3.jpg' },
-    'sophos-engineer': { title: 'Sophos Firewall Engineer', issuer: 'Sophos Certified Engineer', defaultPath: 'certs/sophos-engineer.jpg' },
-    'siem-soc': { title: 'SIEM/SOC Fundamentals', issuer: 'Security Operations Center', defaultPath: 'certs/siem-soc.jpg' },
-    'ethical-hacking': { title: 'Ethical Hacking Essentials', issuer: 'Cybersecurity Fundamentals', defaultPath: 'certs/ethical-hacking.jpg' },
-    'digital-forensics': { title: 'Digital Forensics Essentials', issuer: 'Forensic Investigation', defaultPath: 'certs/digital-forensics.jpg' }
+    'ccna': { title: 'CCNA (Cisco Certified)', issuer: 'Cisco Systems', defaultPath: 'certs/CCNA.jpeg' },
+    'ccnp-encor': { title: 'CCNP ENCOR', issuer: 'Cisco Enterprise Core', defaultPath: 'certs/ENCOR.png' },
+    'ccnp-enarsi': { title: 'CCNP ENARSI', issuer: 'Cisco Enterprise Advanced Routing and Services', defaultPath: 'certs/ENARSI.png' },
+    'fortinet-nse3': { title: 'Fortinet NSE 3', issuer: 'Fortinet Network Security Expert', defaultPath: 'certs/NSE3.jpeg' },
+    'sophos-engineer': { title: 'Sophos Firewall Engineer', issuer: 'Sophos Certified Engineer', defaultPath: 'certs/SOPHOS.jpeg' },
+    'siem-soc': { title: 'SIEM/SOC Fundamentals', issuer: 'Security Operations Center', defaultPath: 'certs/SIEM&SOC.jpeg' },
+    'ethical-hacking': { title: 'Ethical Hacking Essentials', issuer: 'Cybersecurity Fundamentals', defaultPath: 'certs/EHE.jpeg' },
+    'digital-forensics': { title: 'Digital Forensics Essentials', issuer: 'Forensic Investigation', defaultPath: 'certs/DFE.jpeg' }
 };
 
 let currentModalCertId = null;

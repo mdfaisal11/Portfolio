@@ -57,14 +57,14 @@ This portfolio showcases **MD Faisal** — a NetSec Engineer and BSc (Hons) Cybe
 You can add and view certificate scans in two ways:
 1. **In-Browser Upload**: Use the **"Upload Photo"** button directly on any certification card or in the Certificate Modal. Uploaded images are cached immediately in your browser (`localStorage`).
 2. **Permanent Deployment**: Place your scanned certificate images in the `certs/` folder with the following standard names:
-   - `certs/ccna.jpg`
-   - `certs/ccnp-encor.jpg`
-   - `certs/ccnp-enarsi.jpg`
-   - `certs/fortinet-nse3.jpg`
-   - `certs/sophos-engineer.jpg`
-   - `certs/siem-soc.jpg`
-   - `certs/ethical-hacking.jpg`
-   - `certs/digital-forensics.jpg`
+   - `certs/CCNA.jpeg`
+   - `certs/ENCOR.png`
+   - `certs/ENARSI.png`
+   - `certs/NSE3.jpeg`
+   - `certs/SOPHOS.jpeg`
+   - `certs/SIEM&SOC.jpeg`
+   - `certs/EHE.jpeg`
+   - `certs/DFE.jpeg`
 
 ## 🎨 Features Included
 
