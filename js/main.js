@@ -163,6 +163,8 @@ function initCertificates() {
         if (savedPhoto) {
             img.src = savedPhoto;
             container.classList.add('has-photo');
+        } else if (img.getAttribute('src')) {
+            container.classList.add('has-photo');
         } else {
             // Test if default file exists in certs/ directory
             const testImg = new Image();
