@@ -2,10 +2,10 @@
 document.querySelectorAll('.nav-links a, .hero-buttons a[href^="#"], .btn[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const targetId = this.getAttribute('href');
-        if(targetId && targetId !== '#' && targetId.startsWith('#')) {
+        if (targetId && targetId !== '#' && targetId.startsWith('#')) {
             e.preventDefault();
             const targetElement = document.querySelector(targetId);
-            if(targetElement) {
+            if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
@@ -15,55 +15,92 @@ document.querySelectorAll('.nav-links a, .hero-buttons a[href^="#"], .btn[href^=
     });
 });
 
-// Contact form handling (simulated submit - demo mode)
+// Mobile menu toggle
+const mobileToggle = document.getElementById('mobile-toggle');
+const navLinksContainer = document.getElementById('nav-links');
+
+if (mobileToggle && navLinksContainer) {
+    mobileToggle.addEventListener('click', () => {
+        navLinksContainer.classList.toggle('active');
+        const icon = mobileToggle.querySelector('i');
+        if (icon) {
+            if (navLinksContainer.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // Close menu when clicking any nav link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinksContainer.classList.remove('active');
+            const icon = mobileToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+}
+
+// Contact form handling with prefilled mailto email trigger
 const contactForm = document.getElementById('network-contact');
 const feedback = document.getElementById('form-feedback');
 
-if(contactForm) {
+if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        const nameInput = contactForm.querySelector('input[placeholder="Full name"]');
-        const emailInput = contactForm.querySelector('input[placeholder="Email address"]');
-        const msgArea = contactForm.querySelector('textarea');
+        const nameInput = document.getElementById('form-name');
+        const emailInput = document.getElementById('form-email');
+        const msgArea = document.getElementById('form-message');
         
         const name = nameInput ? nameInput.value.trim() : '';
         const email = emailInput ? emailInput.value.trim() : '';
         const message = msgArea ? msgArea.value.trim() : '';
         
-        if(name === '' || email === '' || message === '') {
-            if(feedback) {
-                feedback.innerHTML = '<span style="color:#e11d48;">⚠️ Please fill all fields before sending.</span>';
-                setTimeout(() => { if(feedback) feedback.innerHTML = ''; }, 3000);
+        if (name === '' || email === '' || message === '') {
+            if (feedback) {
+                feedback.innerHTML = '<span style="color:#e11d48;">⚠️ Please fill in all fields before sending.</span>';
+                setTimeout(() => { if (feedback) feedback.innerHTML = ''; }, 3500);
             }
             return;
         }
         
-        if(!email.includes('@')) {
-            if(feedback) {
-                feedback.innerHTML = '<span style="color:#e11d48;">📧 Enter a valid email address.</span>';
-                setTimeout(() => { if(feedback) feedback.innerHTML = ''; }, 3000);
+        if (!email.includes('@') || !email.includes('.')) {
+            if (feedback) {
+                feedback.innerHTML = '<span style="color:#e11d48;">📧 Please enter a valid email address.</span>';
+                setTimeout(() => { if (feedback) feedback.innerHTML = ''; }, 3500);
             }
             return;
         }
         
-        if(feedback) {
-            feedback.innerHTML = '<span style="color:#10b981;">✅ Thanks! (Demo mode) I\'ll get back to you soon.</span>';
-        }
+        // Open default email client with pre-filled message
+        const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+        const mailtoUrl = `mailto:mdfaisalansari2202@gmail.com?subject=${subject}&body=${body}`;
         
-        if(contactForm) contactForm.reset();
+        if (feedback) {
+            feedback.innerHTML = '<span style="color:#10b981;">✅ Opening your email client to send your message...</span>';
+        }
+
+        window.location.href = mailtoUrl;
+        contactForm.reset();
         
         setTimeout(() => { 
-            if(feedback) feedback.innerHTML = ''; 
-        }, 4000);
+            if (feedback) feedback.innerHTML = ''; 
+        }, 5000);
     });
 }
 
 // Dynamic copyright year update
-const footerParagraph = document.querySelector('footer p');
-if(footerParagraph) {
-    const currentYear = new Date().getFullYear();
-    footerParagraph.innerHTML = footerParagraph.innerHTML.replace('2026', currentYear);
+const yearSpan = document.getElementById('year');
+if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
 }
 
 // Active nav link highlighting on scroll
@@ -72,19 +109,19 @@ const navLinks = document.querySelectorAll('.nav-links a');
 
 function updateActiveNav() {
     let current = '';
-    const scrollPosition = window.scrollY + 120;
+    const scrollPosition = window.scrollY + 140;
     
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if(scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             current = section.getAttribute('id');
         }
     });
     
     navLinks.forEach(link => {
         const href = link.getAttribute('href').substring(1);
-        if(href === current) {
+        if (href === current) {
             link.style.color = '#1e6b9e';
             link.style.fontWeight = '700';
         } else {

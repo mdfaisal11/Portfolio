@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>MD Faisal | Network Administrator & Cybersecurity Professional</title>
+    <meta name="description" content="Portfolio of MD Faisal - CCNA Certified Junior Network Administrator & Cybersecurity Professional at OM Networks, specializing in enterprise routing, switching, firewalls & digital forensics.">
+    <meta name="keywords" content="MD Faisal, Network Administrator, Cybersecurity, CCNA, Sophos Firewall, Fortinet, Nepal, OM Networks">
+    <meta property="og:title" content="MD Faisal | Network Administrator & Cybersecurity Professional">
+    <meta property="og:description" content="Securing networks, engineering reliability. Junior Network Administrator with enterprise experience.">
+    <meta property="og:image" content="https://mdfaisal.com.np/profile.jpeg">
+    <meta property="og:url" content="https://mdfaisal.com.np">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 <header>
     <div class="container">
         <nav>
-            <div class="logo">MD Faisal<span class="logo-sub"> | NetSec Eng.</span></div>
-            <ul class="nav-links">
+            <a href="#home" class="logo">MD Faisal<span class="logo-sub"> | NetSec Eng.</span></a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -49,12 +61,12 @@
             <h2 class="section-title">Technical Arsenal</h2>
             <div class="skills-grid">
                 <div class="skill-card"><i class="fas fa-network-wired"></i> Routing & Switching </div>
-                <div class="skill-card"><i class="fas fa-firewall"></i> Sophos/Fortinet Firewalls </div>
+                <div class="skill-card"><i class="fas fa-shield-halved"></i> Sophos/Fortinet Firewalls </div>
                 <div class="skill-card"><i class="fas fa-chart-line"></i> Network Design & Optimization</div>
                 <div class="skill-card"><i class="fas fa-wifi"></i> Enterprise Wireless (APs)</div>
-                <div class="skill-card"><i class="fas fa-tachometer-alt"></i> VLANs, STP, EtherChannel</div>
+                <div class="skill-card"><i class="fas fa-server"></i> VLANs, STP, EtherChannel</div>
                 <div class="skill-card"><i class="fas fa-shield-virus"></i> SIEM/SOC Operations</div>
-                <div class="skill-card"><i class="fas fa-search"></i> Digital Forensics (Autopsy/FTK)</div>
+                <div class="skill-card"><i class="fas fa-magnifying-glass"></i> Digital Forensics (Autopsy/FTK)</div>
                 <div class="skill-card"><i class="fas fa-code-branch"></i> TCP/IP & Advanced Subnetting</div>
             </div>
         </div>
@@ -75,7 +87,7 @@
                 </ul>
             </div>
             <div class="exp-item">
-                <h3> Junior Network Administrator Intern @ OM Networks</h3>
+                <h3>Junior Network Administrator Intern @ OM Networks</h3>
                 <div class="exp-meta"><i class="far fa-calendar-alt"></i> 3 Months</div>
                 <ul>
                     <li>Assisted enterprise network setup, troubleshooting connectivity issues in production environment.</li>
@@ -102,7 +114,7 @@
                         <h3>Network Simulation Project</h3>
                         <p>Designed & tested routing/switching scenarios using advanced simulation tools. CCNP-level topologies, STP, EtherChannel, OSPF.</p>
                         <div class="tech-stack"><span>Cisco Packet Tracer</span><span>EIGRP</span><span>VLAN</span></div>
-                        <a href="https://github.com/mdfaisal11/CCNA-Projects" target="_blank" class="project-link">GitHub Repo <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mdfaisal11/CCNA-Projects" target="_blank" rel="noopener noreferrer" class="project-link">GitHub Repo <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -111,7 +123,7 @@
                         <h3>SIEM/SOC Analyst Lab</h3>
                         <p>Security monitoring, log analysis, and alert investigation using modern SIEM tools (Splunk/ELK). Incident response simulation.</p>
                         <div class="tech-stack"><span>Splunk</span><span>Wireshark</span><span>Threat Intel</span></div>
-                        <a href="https://github.com/mdfaisal11/Cybersecurity-Projects" target="_blank" class="project-link">Explore <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mdfaisal11/Cybersecurity-Projects" target="_blank" rel="noopener noreferrer" class="project-link">Explore <i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
@@ -120,7 +132,7 @@
                         <h3>Digital Forensics Analysis</h3>
                         <p>Investigated digital evidence using Autopsy & FTK Imager. Recovered artifacts, file carving, and forensic reporting.</p>
                         <div class="tech-stack"><span>Autopsy</span><span>FTK Imager</span><span>Hex Analysis</span></div>
-                        <a href="https://github.com/mdfaisal11/Forensics-Projects" target="_blank" class="project-link">Case study <i class="fab fa-github"></i></a>
+                        <a href="https://github.com/mdfaisal11/Forensics-Projects" target="_blank" rel="noopener noreferrer" class="project-link">Case study <i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </div>
@@ -164,22 +176,31 @@
                 <div class="contact-info">
                     <h3>Let's collaborate on networks & security</h3>
                     <p>Open for network engineering roles, freelance consulting, or cybersecurity discussions.</p>
-                    <div class="contact-detail"><i class="fas fa-phone-alt"></i> <span>+977 9811025081</span></div>
-                    <div class="contact-detail"><i class="fas fa-envelope"></i> <span>mdfaisalansari2202@gmail.com</span></div>
-                    <div class="contact-detail"><i class="fas fa-map-marker-alt"></i> <span>Kathmandu, Bagmati, Nepal</span></div>
+                    <div class="contact-detail">
+                        <i class="fas fa-phone-alt"></i> 
+                        <a href="tel:+9779811025081">+977 9811025081</a>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-envelope"></i> 
+                        <a href="mailto:mdfaisalansari2202@gmail.com">mdfaisalansari2202@gmail.com</a>
+                    </div>
+                    <div class="contact-detail">
+                        <i class="fas fa-map-marker-alt"></i> 
+                        <span>Kathmandu, Bagmati, Nepal</span>
+                    </div>
                     <div class="social-links">
-                        <a href="https://linkedin.com/in/md-faisal-4248bb270" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/mdfaisal11" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://linkedin.com/in/md-faisal-4248bb270" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/mdfaisal11" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="mailto:mdfaisalansari2202@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="network-contact" action="#" method="post">
-                        <div class="form-group"><input type="text" placeholder="Full name" required></div>
-                        <div class="form-group"><input type="email" placeholder="Email address" required></div>
-                        <div class="form-group"><textarea rows="4" placeholder="Message / Opportunity details..."></textarea></div>
+                    <form id="network-contact" action="mailto:mdfaisalansari2202@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group"><input type="text" id="form-name" name="name" placeholder="Full name" required></div>
+                        <div class="form-group"><input type="email" id="form-email" name="email" placeholder="Email address" required></div>
+                        <div class="form-group"><textarea id="form-message" name="message" rows="4" placeholder="Message / Opportunity details..." required></textarea></div>
                         <button type="submit" class="btn">Send message <i class="fas fa-paper-plane"></i></button>
-                        <p id="form-feedback" style="margin-top: 1rem; font-size: 0.8rem;"></p>
+                        <p id="form-feedback" style="margin-top: 1rem; font-size: 0.85rem; font-weight: 500;"></p>
                     </form>
                 </div>
             </div>
@@ -189,7 +210,7 @@
 
 <footer>
     <div class="container">
-        <p>© 2026 MD Faisal — Network Administrator | Cybersecurity Enthusiast | <i class="fas fa-shield-hog"></i> Based on real-world enterprise experience.</p>
+        <p>© <span id="year">2026</span> MD Faisal — Network Administrator | Cybersecurity Enthusiast | <i class="fas fa-shield-alt"></i> Based on real-world enterprise experience.</p>
     </div>
 </footer>
 

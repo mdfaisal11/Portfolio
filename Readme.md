@@ -4,6 +4,20 @@ A modern, responsive personal portfolio website for a Network Administrator and 
 
 ## 📁 Project Structure
 
+```text
+├── index.html          # Main portfolio webpage
+├── CNAME               # Custom domain config (mdfaisal.com.np)
+├── profile.jpeg        # Profile photograph
+├── Readme.md           # Documentation
+├── css/
+│   └── style.css       # Responsive styling & UI layout
+├── js/
+│   └── main.js         # Mobile menu, navigation & email form handling
+└── .github/
+    └── workflows/
+        └── static.yml  # Automated GitHub Actions Pages deployment
+```
+
 
 ## 🚀 How to Run
 
