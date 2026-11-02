@@ -710,9 +710,7 @@ section {
 }
 
 .cert-actions {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
+    display: block;
     margin-top: auto;
     padding-top: 0.8rem;
 }
@@ -721,11 +719,11 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    font-size: 0.78rem;
+    gap: 6px;
+    font-size: 0.84rem;
     font-weight: 600;
-    padding: 0.55rem 0.5rem;
-    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
     transition: all 0.2s ease;
@@ -733,6 +731,7 @@ section {
     text-align: center;
     font-family: inherit;
     white-space: nowrap;
+    width: 100%;
 }
 
 .btn-view-cert {

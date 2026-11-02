@@ -147,7 +147,7 @@
     <section id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications & Development</h2>
-            <p class="section-subtitle">Official industry certifications, ongoing core enterprise qualifications, and specialized cybersecurity credentials with certificate photo previews and upload options.</p>
+            <p class="section-subtitle">Official industry certifications, ongoing core enterprise qualifications, and specialized cybersecurity credentials with verified certificate previews.</p>
             
             <div class="certifications-grid">
                 <!-- 1. CCNA -->
@@ -174,10 +174,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="ccna">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="ccna">
-                        </label>
                     </div>
                 </div>
 
@@ -205,10 +201,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="ccnp-encor">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="ccnp-encor">
-                        </label>
                     </div>
                 </div>
 
@@ -236,10 +228,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="ccnp-enarsi">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="ccnp-enarsi">
-                        </label>
                     </div>
                 </div>
 
@@ -267,10 +255,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="fortinet-nse3">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="fortinet-nse3">
-                        </label>
                     </div>
                 </div>
 
@@ -298,10 +282,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="sophos-engineer">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="sophos-engineer">
-                        </label>
                     </div>
                 </div>
 
@@ -329,10 +309,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="siem-soc">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="siem-soc">
-                        </label>
                     </div>
                 </div>
 
@@ -360,10 +336,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="ethical-hacking">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="ethical-hacking">
-                        </label>
                     </div>
                 </div>
 
@@ -391,10 +363,6 @@
                         <button type="button" class="cert-btn btn-view-cert" data-cert-id="digital-forensics">
                             <i class="fas fa-eye"></i> View Certificate
                         </button>
-                        <label class="cert-btn btn-upload-cert" title="Upload certificate photo">
-                            <i class="fas fa-upload"></i> Upload Photo
-                            <input type="file" accept="image/*" class="cert-upload-input" data-cert-id="digital-forensics">
-                        </label>
                     </div>
                 </div>
             </div>
@@ -587,25 +555,13 @@
                 <div id="cert-modal-empty-state" class="cert-modal-empty">
                     <i class="fas fa-file-image"></i>
                     <p>No certificate photo uploaded yet.</p>
-                    <span style="font-size:0.82rem; color:#94a3b8; display:block; margin-top:0.4rem;">Click "Upload / Replace Photo" below to choose a certificate photo from your computer.</span>
+                    
                 </div>
             </div>
-            <div class="cert-modal-actions">
-                <label class="btn cert-batch-btn" style="cursor:pointer; margin:0;">
-                    <i class="fas fa-upload"></i> Upload / Replace Photo
-                    <input type="file" id="cert-modal-upload-input" accept="image/*" style="display:none;">
-                </label>
-                <div style="display:flex; gap:0.5rem;">
-                    <button type="button" id="cert-modal-download-btn" class="btn btn-outline cert-batch-btn" style="display:none;">
-                        <i class="fas fa-download"></i> Download Photo
-                    </button>
-                    <button type="button" id="cert-modal-remove-btn" class="btn btn-outline cert-batch-btn" style="border-color:#f43f5e; color:#f43f5e;">
-                        <i class="fas fa-trash-alt"></i> Reset Photo
-                    </button>
-                </div>
-            </div>
-            <div class="cert-modal-tip">
-                <strong><i class="fas fa-lightbulb" style="color:#eab308;"></i> Permanent Save Tip:</strong> Photos uploaded here are immediately saved to your browser! To permanently publish this photo to your live website, also copy your certificate image file into the project folder as <code id="cert-modal-filename-hint" style="background:#e2e8f0; padding:2px 6px; border-radius:4px; color:#0f172a; font-weight:600;">certs/ccna.jpg</code>.
+            <div class="cert-modal-actions" style="justify-content: flex-end;">
+                <button type="button" id="cert-modal-download-btn" class="btn cert-batch-btn">
+                    <i class="fas fa-download"></i> Download Certificate
+                </button>
             </div>
         </div>
     </div>

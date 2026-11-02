@@ -52,11 +52,9 @@ This portfolio showcases **MD Faisal** — a NetSec Engineer and BSc (Hons) Cybe
 - **CyberSecurity Projects**: [github.com/mdfaisal11/Cybersecurity-Projects.git](https://github.com/mdfaisal11/Cybersecurity-Projects.git)
 - **Forensics Projects**: [github.com/mdfaisal11/Forensics-Projects.git](https://github.com/mdfaisal11/Forensics-Projects.git)
 
-## 🎓 Certificate Photos & Upload Options
+## 🎓 Verified Certificate Photos
 
-You can add and view certificate scans in two ways:
-1. **In-Browser Upload**: Use the **"Upload Photo"** button directly on any certification card or in the Certificate Modal. Uploaded images are cached immediately in your browser (`localStorage`).
-2. **Permanent Deployment**: Place your scanned certificate images in the `certs/` folder with the following standard names:
+All 8 official certificates and study qualifications are embedded in the `certs/` directory and can be viewed full-screen using the **View Certificate** modal on each card:
    - `certs/CCNA.jpeg`
    - `certs/ENCOR.png`
    - `certs/ENARSI.png`
