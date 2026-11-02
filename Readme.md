@@ -35,6 +35,7 @@ A modern, responsive personal portfolio website showcasing MD Faisal's technical
 
 This portfolio showcases **MD Faisal** — a NetSec Engineer and BSc (Hons) Cybersecurity & Digital Forensics final-year student with:
 - **CCNA (Cisco Certified)** & currently studying **CCNP ENCOR & ENARSI**
+- **From Helpdesk to Network Engineer Path** (Ping My Network)
 - **Fortinet NSE 3** Certification
 - **Sophos Firewall Engineer** Certification
 - **SIEM/SOC Fundamentals**, **Ethical Hacking Essentials**, and **Digital Forensics Essentials**
@@ -58,6 +59,7 @@ All 8 official certificates and study qualifications are embedded in the `certs/
    - `certs/CCNA.jpeg`
    - `certs/ENCOR.png`
    - `certs/ENARSI.png`
+   - `certs/HelpDesk to Network Engineer.png`
    - `certs/NSE3.jpeg`
    - `certs/SOPHOS.jpeg`
    - `certs/SIEM&SOC.jpeg`

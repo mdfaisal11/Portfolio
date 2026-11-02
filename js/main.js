@@ -141,6 +141,7 @@ const certDetails = {
     'ccna': { title: 'CCNA (Cisco Certified)', issuer: 'Cisco Systems', defaultPath: 'certs/CCNA.jpeg' },
     'ccnp-encor': { title: 'CCNP ENCOR', issuer: 'Cisco Enterprise Core', defaultPath: 'certs/ENCOR.png' },
     'ccnp-enarsi': { title: 'CCNP ENARSI', issuer: 'Cisco Enterprise Advanced Routing and Services', defaultPath: 'certs/ENARSI.png' },
+    'helpdesk-network-engineer': { title: 'From Helpdesk to Network Engineer Path', issuer: 'Ping My Network (Credential ID: PMN-LRYPPKLK0X4R2BX)', defaultPath: 'certs/HelpDesk%20to%20Network%20Engineer.png' },
     'fortinet-nse3': { title: 'Fortinet NSE 3', issuer: 'Fortinet Network Security Expert', defaultPath: 'certs/NSE3.jpeg' },
     'sophos-engineer': { title: 'Sophos Firewall Engineer', issuer: 'Sophos Certified Engineer', defaultPath: 'certs/SOPHOS.jpeg' },
     'siem-soc': { title: 'SIEM/SOC Fundamentals', issuer: 'Security Operations Center', defaultPath: 'certs/SIEM&SOC.jpeg' },
